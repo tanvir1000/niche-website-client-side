@@ -1,10 +1,9 @@
-import { faFacebookF, faGooglePlusG, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faAngleUp, faMapMarkedAlt, faPaperPlane, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Button, Carousel, Col, Container, Form, Row } from 'react-bootstrap';
+import { fadeOutEnabled } from 'react-reveal/globals';
 import { Link } from 'react-router-dom';
-import Logo from '../../../images/cricket-bat-and-ball-icon-on-white-vector.webp';
 import './Footer.css';
 
 const Footer = () => {
@@ -29,6 +28,42 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md={12} lg={4}>
+
+                    <Carousel fade>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://i.pinimg.com/originals/8b/29/f5/8b29f5337d0ee78da8a44900187f758e.jpg"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      {/* <h3>History of cricket bat</h3> */}
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Historical_cricket_bat_art.jpg"
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+      {/* <h3>History of cricket bat</h3> */}
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://www.crictracker.com/wp-content/uploads/2019/09/Thomas-White-Wide-blade.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      {/* <h3>History of cricket bat</h3> */}
+      {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
                 
                     </Col>
                     <Col md={12} lg={8}>
@@ -47,7 +82,7 @@ const Footer = () => {
                             <Col md={6}>
                                 <div className="contact-us contact-us-last">
                                     <div className="contact-icon">
-                                        <FontAwesomeIcon icon={faPhoneVolume} />
+                                        <FontAwesomeIcon icon={faPaperPlane} />
                                     </div>
                                     <div className="contact-info">
                                         <h3>+880-1917118127</h3>
@@ -147,7 +182,7 @@ const Footer = () => {
             </div>
             <div className="back-to-top">
                 <Button variant="dark" onClick={scrollHandler} title="Back to Top" className={scrolled ? "d-block" : "d-none"}>
-                    <FontAwesomeIcon icon={faAngleUp} />
+                    <FontAwesomeIcon icon={fadeOutEnabled} />
                 </Button>
             </div>
         </footer>
