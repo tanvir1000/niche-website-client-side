@@ -16,7 +16,7 @@ const Testimonials = () => {
     const [Reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/reviews')
+        axios.get('https://polar-beyond-73344.herokuapp.com/reviews')
             .then(res => {
                 setReviews(res.data);
                 setLoading(false);

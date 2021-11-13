@@ -21,7 +21,7 @@ const Book = () => {
     const serviceInfo = services.find(service => service.title === selectedOption.value);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/services')
+        axios.get('https://polar-beyond-73344.herokuapp.com/services')
             .then(res => setServices(res.data))
             .catch(error => toast.error(error.message))
     }, [])

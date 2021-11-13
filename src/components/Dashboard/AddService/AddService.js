@@ -66,7 +66,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                 setEditService({});
                 return toast.error("You haven't changed anything!");
             }
-            axios.patch(`http://localhost:8000/${editService._id}`, serviceInfo)
+            axios.patch(`https://polar-beyond-73344.herokuapp.com/${editService._id}`, serviceInfo)
                 .then(res => {
                     toast.dismiss(loading);
                     if (res.data) {
@@ -84,7 +84,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
             return;
         }
 
-        axios.post('http://localhost:8000/addService', serviceInfo)
+        axios.post('https://polar-beyond-73344.herokuapp.com/addService', serviceInfo)
             .then(res => {
                 toast.dismiss(loading);
                 if (res.data) {

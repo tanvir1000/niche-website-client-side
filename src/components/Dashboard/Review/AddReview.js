@@ -24,7 +24,7 @@ const AddReview = ({ review, setReview, edit, setEdit }) => {
         data.rating = rating;
 
         if (edit) {
-            axios.patch(`http://localhost:8000/updateReview/${review._id}`, data)
+            axios.patch(`https://polar-beyond-73344.herokuapp.com/updateReview/${review._id}`, data)
                 .then(res => {
                     toast.dismiss(loading);
                     if (
@@ -49,7 +49,7 @@ const AddReview = ({ review, setReview, edit, setEdit }) => {
             return;
         }
 
-        axios.post('http://localhost:8000/addReview', data)
+        axios.post('https://polar-beyond-73344.herokuapp.com/addReview', data)
             .then(res => {
                 toast.dismiss(loading);
                 if (res.data) {
