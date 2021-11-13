@@ -1,4 +1,4 @@
-import { faAngleUp, faMapMarkedAlt, faPaperPlane, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faFileContract, faMapMarkedAlt, faPaperPlane, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Button, Carousel, Col, Container, Form, Row } from 'react-bootstrap';
@@ -33,7 +33,7 @@ const Footer = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://i.pinimg.com/originals/8b/29/f5/8b29f5337d0ee78da8a44900187f758e.jpg"
+      src="https://okanaganhomes.com/wp-content/uploads/2019/05/contact-us.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -43,7 +43,7 @@ const Footer = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Historical_cricket_bat_art.jpg"
+      src="https://www.rumrock.tech/wp-content/uploads/2021/03/CUS.jpg"
       alt="Second slide"
     />
 
@@ -67,30 +67,11 @@ const Footer = () => {
                 
                     </Col>
                     <Col md={12} lg={8}>
-                        <Row>
+                        {/* <Row>
                             <Col md={6}>
-                                <div className="contact-us">
-                                    <div className="contact-icon">
-                                        <FontAwesomeIcon icon={faMapMarkedAlt} />
-                                    </div>
-                                    <div className="contact-info">
-                                        <h3>Dhaka, Bangladesh</h3>
-                                        <p>Talertach, Dhaka-1214</p>
-                                    </div>
-                                </div>
+                               
                             </Col>
-                            <Col md={6}>
-                                <div className="contact-us contact-us-last">
-                                    <div className="contact-icon">
-                                        <FontAwesomeIcon icon={faPaperPlane} />
-                                    </div>
-                                    <div className="contact-info">
-                                        <h3>+880-1917118127</h3>
-                                        <p>Give us a call</p>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
+                        </Row> */}
                         <Row>
                             <Col md={12} lg={6}>
                                 <div className="footer-widget footer-left-widget">
@@ -156,10 +137,10 @@ const Footer = () => {
             <div className="copyright">
                 <Container>
                     <Row>
-                        <Col md={6} className="order-2 order-md-1">
+                        <Col md={12} className="order-2 order-md-1">
                             <span>Copyright © {new Date().getFullYear()}, All Rights Reserved batMaster</span>
                         </Col>
-                        <Col md={6} className="order-1 order-md-2">
+                        {/* <Col md={6} className="order-1 order-md-2">
                             <div className="copyright-menu">
                                 <ul>
                                     <li>
@@ -176,7 +157,7 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
             </div>

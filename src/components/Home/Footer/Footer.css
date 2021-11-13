@@ -102,7 +102,7 @@
 .dk-footer {
   padding: 75px 0 0;
   background-color: #300d0d;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
 }
 .dk-footer a {
@@ -318,8 +318,8 @@
 }
 .back-to-top .btn-dark:hover {
   cursor: pointer;
-  background: #c715fd;
-  border-color: #c715fd;
+  background: #1566fd;
+  border-color: #5b15fd;
 }
 
 @media (max-width: 767px) {

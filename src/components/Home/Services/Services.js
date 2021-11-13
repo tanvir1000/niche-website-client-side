@@ -12,7 +12,7 @@ const Services = () => {
     const [showMore, setShowMore] = useState(false);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/services')
+        axios.get('https://polar-beyond-73344.herokuapp.com/services')
             .then(res => {
                 setServices(res.data);
                 setLoading(false);
